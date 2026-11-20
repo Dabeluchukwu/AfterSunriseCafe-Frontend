@@ -6,9 +6,9 @@ import Testimonials from "@/components/home/Testimonials";
 import CtaBanner from "@/components/home/CtaBanner";
 
 export const metadata = {
-  title: "After Sunrise Bakery — Freshly Baked, Every Day",
+  title: "After Sunrise Cafe — Freshly Made, Just for You",
   description:
-    "Artisan breads, custom cakes, pastries, and cookies baked fresh daily in Lagos. Call 07042660291 or WhatsApp 08088659045 to order.",
+    "Artisan breads, cakes, pastries, and cookies baked fresh daily. Custom cakes, catering, and corporate orders. Call 07042660291 or WhatsApp 08088659045.",
 };
 
 export default function HomePage() {
