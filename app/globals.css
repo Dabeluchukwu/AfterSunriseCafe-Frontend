@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Primary: white — used for backgrounds, cards, page bases */
+  --color-primary: #FFFFFF;
+  --color-primary-50: #FFFFFF;
+  --color-primary-100: #FAFAFA;
+  --color-primary-200: #F5F5F5;
+
+  /* Secondary: red — CTAs, headings accents, links, focus rings */
+  --color-secondary: #DC2626;
+  --color-secondary-50: #FEF2F2;
+  --color-secondary-100: #FEE2E2;
+  --color-secondary-500: #DC2626;
+  --color-secondary-600: #B91C1C;
+  --color-secondary-700: #991B1B;
+
+  /* Third: pink — soft accents, badges, highlights, hover tints */
+  --color-accent: #F9A8D4;
+  --color-accent-50: #FDF2F8;
+  --color-accent-100: #FCE7F3;
+  --color-accent-300: #F9A8D4;
+  --color-accent-500: #EC4899;
+
+  /* Neutral: dark grey — body text, footer, headings */
+  --color-ink: #1F2937;
+  --color-ink-soft: #4B5563;
+  --color-ink-muted: #9CA3AF;
+
+  /* Fonts */
+  --font-sans: var(--font-geist-sans, ui-sans-serif, system-ui, sans-serif);
+  --font-display: var(--font-playfair, Georgia, serif);
+
+  /* Radii */
+  --radius-card: 1rem;
+  --radius-pill: 9999px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Global base styles */
+html, body {
+  background-color: var(--color-primary);
+  color: var(--color-ink);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Focus ring uses brand secondary */
+:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
 }
