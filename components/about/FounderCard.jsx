@@ -8,7 +8,7 @@ export default function FounderCard() {
       <div className="bg-accent-50 rounded-card p-8 md:p-12 max-w-3xl mx-auto text-center">
         <div className="relative w-28 h-28 rounded-full overflow-hidden mx-auto mb-5 border-4 border-white shadow-sm">
           <Image
-            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+            src="/ChidaluImage.PNG"
             alt="Founder of After Sunrise Bakery"
             fill
             sizes="112px"
