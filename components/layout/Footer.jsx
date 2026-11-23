@@ -19,7 +19,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2">
           <h3 className="font-display text-2xl font-bold text-white mb-3">
-            After Sunrise Bakery
+            After Sunrise Café
           </h3>
           <p className="text-white/70 max-w-sm">
             Freshly baked breads, cakes, pastries, and cookies made with love
