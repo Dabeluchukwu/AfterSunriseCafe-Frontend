@@ -1,22 +1,33 @@
+"use client"; // Add this at the top
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { HiArrowRight } from "react-icons/hi";
 import FadeUp from "@/components/ui/FadeUp";
 import MenuCard from "@/components/menu/MenuCard";
+import MenuDetailModal from "@/components/menu/MenuDetailModal";
 import EmptyState from "@/components/ui/EmptyState";
 import { HiCake } from "react-icons/hi";
-import { api } from "@/lib/api";
+import api from "@/lib/api";
 
-async function getProducts() {
-  try {
-    const { data } = await api.get("/products");
-    return data.slice(0, 6);
-  } catch {
-    return [];
-  }
-}
+export default function MenuPreview() {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [detail, setDetail] = useState(null);
 
-export default async function MenuPreview() {
-  const products = await getProducts();
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const { data } = await api.get("/products");
+        setProducts(data.slice(0, 6));
+      } catch {
+        // silently fail
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchProducts();
+  }, []);
 
   return (
     <section className="py-20 bg-primary">
@@ -26,7 +37,7 @@ export default async function MenuPreview() {
             Our Menu
           </span>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-ink mt-2">
-            A taste of what we bake
+            A taste of what we make
           </h2>
           <p className="mt-3 text-ink-muted">
             From breakfast loaves to celebration cakes — everything is made
@@ -34,7 +45,11 @@ export default async function MenuPreview() {
           </p>
         </FadeUp>
 
-        {products.length === 0 ? (
+        {loading ? (
+          <div className="flex justify-center py-10">
+            <span className="text-ink-muted">Loading...</span>
+          </div>
+        ) : products.length === 0 ? (
           <EmptyState
             icon={HiCake}
             title="Menu coming soon"
@@ -44,7 +59,7 @@ export default async function MenuPreview() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {products.map((p, i) => (
               <FadeUp key={p._id} delay={i * 0.06}>
-                <MenuCard product={p} />
+                <MenuCard product={p} onOpen={setDetail} />
               </FadeUp>
             ))}
           </div>
@@ -59,6 +74,8 @@ export default async function MenuPreview() {
           </Link>
         </div>
       </div>
+
+      <MenuDetailModal product={detail} onClose={() => setDetail(null)} />
     </section>
   );
 }

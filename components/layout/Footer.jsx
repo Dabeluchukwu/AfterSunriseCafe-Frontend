@@ -83,7 +83,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 text-sm text-white/50 flex flex-col sm:flex-row justify-between gap-2">
-          <span>© {new Date().getFullYear()} After Sunrise Bakery. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} After Sunrise Café. All rights reserved.</span>
           <span>Baked with ❤️ in Lagos</span>
         </div>
       </div>

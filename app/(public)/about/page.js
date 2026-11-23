@@ -4,7 +4,7 @@ import FounderCard from "@/components/about/FounderCard";
 import Mvv from "@/components/about/Mvv";
 
 export const metadata = {
-  title: "About — After Sunrise Bakery",
+  title: "About — After Sunrise Café",
   description:
     "The story behind After Sunrise Bakery — a Lagos bakery built on fresh ingredients, real craft, and a love for baking.",
 };

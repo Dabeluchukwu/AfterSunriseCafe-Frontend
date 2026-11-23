@@ -1,10 +1,10 @@
 import FadeUp from "@/components/ui/FadeUp";
 
 const STATS = [
-  { value: "10,000+", label: "Pastries Baked" },
+  { value: "5000+", label: "Pastries Baked" },
   { value: "500+", label: "Happy Customers" },
   { value: "25+", label: "Menu Items" },
-  { value: "8 yrs", label: "Of Baking" },
+  { value: "2 yrs", label: "Of Baking" },
 ];
 
 export default function StatsBar() {

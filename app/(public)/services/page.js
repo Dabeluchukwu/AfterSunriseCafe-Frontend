@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button";
 import { WHATSAPP_LINK } from "@/lib/constants";
 
 export const metadata = {
-  title: "Services — After Sunrise Bakery",
+  title: "Services — After Sunrise Café",
   description:
     "Custom cakes, event catering, corporate orders, and curated pastry boxes in Lagos.",
 };

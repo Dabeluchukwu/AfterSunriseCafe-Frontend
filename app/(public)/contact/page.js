@@ -3,7 +3,7 @@ import ContactInfo from "@/components/contact/ContactInfo";
 import ContactForm from "@/components/contact/ContactForm";
 
 export const metadata = {
-  title: "Contact — After Sunrise Bakery",
+  title: "Contact — After Sunrise Café",
   description:
     "Get in touch with After Sunrise Bakery. Call 07042660291, WhatsApp 08088659045, or send us a message.",
 };

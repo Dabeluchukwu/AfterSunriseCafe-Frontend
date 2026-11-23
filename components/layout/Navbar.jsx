@@ -22,9 +22,9 @@ export default function Navbar() {
             <span className="text-2xl font-display font-bold text-secondary">
               After Sunrise
             </span>
-            <span className="hidden sm:inline text-sm text-ink-muted">Cafe</span>
+            <span className="hidden sm:inline text-sm text-ink-muted">Café</span>
           </Link>
-
+ 
           <nav className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((l) => (
               <Link

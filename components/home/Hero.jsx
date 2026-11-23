@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section className="relative h-[90vh] min-h-[560px] w-full overflow-hidden">
       <Image
-        src="/BakeryHero.png"
+        src="/hero-bread.jpg"
         alt="Fresh bread and pastries at After Sunrise Bakery"
         fill
         priority
@@ -28,7 +28,7 @@ export default function Hero() {
           className="max-w-2xl"
         >
           <span className="inline-block bg-accent-100 text-secondary text-sm font-medium px-3 py-1 rounded-pill mb-5">
-            Baked fresh daily since 2015
+            Made fresh daily Since 2024
           </span>
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
             Freshly baked,
@@ -36,7 +36,7 @@ export default function Hero() {
             <span className="text-accent">just for you.</span>
           </h1>
           <p className="mt-5 text-lg text-white/85 max-w-xl">
-            Artisan breads, custom cakes, pastries, and cookies — made every
+            Artisan breads, deserts cakes, savory and sweet pastries, and cookies — made every
             morning with real ingredients and a whole lot of love.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { HiCake } from "react-icons/hi";
 import MenuCard from "./MenuCard";
 import CategoryFilter from "./CategoryFilter";
+import MenuDetailModal from "./MenuDetailModal";
 import FadeUp from "@/components/ui/FadeUp";
 import EmptyState from "@/components/ui/EmptyState";
 import Spinner from "@/components/ui/Spinner";
@@ -14,8 +15,8 @@ export default function MenuGrid() {
   const [categories, setCategories] = useState([]);
   const [active, setActive] = useState("");
   const [loading, setLoading] = useState(true);
+  const [detail, setDetail] = useState(null);
 
-  // Load all products + categories once
   useEffect(() => {
     const load = async () => {
       setLoading(true);
@@ -27,7 +28,7 @@ export default function MenuGrid() {
         setProducts(prodRes.data);
         setCategories(catRes.data);
       } catch {
-        // swallow — empty state handles it
+        /* empty state handles it */
       } finally {
         setLoading(false);
       }
@@ -72,7 +73,7 @@ export default function MenuGrid() {
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((p, i) => (
           <FadeUp key={p._id} delay={i * 0.04}>
-            <MenuCard product={p} />
+            <MenuCard product={p} onOpen={setDetail} />
           </FadeUp>
         ))}
       </div>
@@ -82,6 +83,8 @@ export default function MenuGrid() {
           No items in this category yet.
         </p>
       )}
+
+      <MenuDetailModal product={detail} onClose={() => setDetail(null)} />
     </div>
   );
 }

@@ -28,7 +28,7 @@ export default function WhyChooseUs() {
             Why choose us
           </span>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-ink mt-2">
-            More than a bakery
+            More than a café 
           </h2>
         </FadeUp>
 

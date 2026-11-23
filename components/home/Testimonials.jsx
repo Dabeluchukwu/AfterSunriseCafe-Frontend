@@ -3,19 +3,29 @@ import FadeUp from "@/components/ui/FadeUp";
 
 const TESTIMONIALS = [
   {
-    name: "Amaka O.",
-    role: "Lekki, Lagos",
-    text: "The birthday cake I ordered for my daughter was absolutely perfect — moist, rich, and beautifully decorated. Everyone asked where I got it!",
+    name: "Chubi",
+    role: "Onitsha, Anambra state.",
+    text: "Your samosas are divine.",
   },
   {
-    name: "Chinedu A.",
-    role: "Victoria Island",
-    text: "Their bread is the freshest in Lagos, full stop. I pick up a loaf every Saturday morning and it never disappoints.",
+    name: "Danny",
+    role: "Ago, Lagos State.",
+    text: "Got small chops for my mother and she absolutely loved it.",
   },
   {
-    name: "Bisi F.",
-    role: "Ikoyi",
-    text: "Ordered pastries for a corporate event — delivered on time and everyone loved them. After Sunrise is now my go-to for office orders.",
+    name: "Chinny",
+    role: "Igbariam, Anambra state.",
+    text: "I just found my pastry spot. You’ve earned yourself a customer.",
+  },
+   {
+    name: "Mmesoma E.",
+    role: "Awka Anambra State.",
+    text: "I love it .",
+  },
+   {
+    name: "Jennifer S.",
+    role: "Oshodi, lagos state.",
+    text: "I ordered the puff puff fusion and I love it. ",
   },
 ];
 

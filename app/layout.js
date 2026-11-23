@@ -11,7 +11,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: "After Sunrise Cafe — Freshly Made, Just for You",
+  title: "After Sunrise Café — Freshly Made, Just for You",
   description:
     "Artisan breads, cakes, pastries, and cookies baked fresh daily. Custom cakes, catering, and corporate orders. Call 07042660291 or WhatsApp 08088659045.",
 };

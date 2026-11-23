@@ -2,7 +2,7 @@ import FadeUp from "@/components/ui/FadeUp";
 import MenuGrid from "@/components/menu/MenuGrid";
 
 export const metadata = {
-  title: "Menu — After Sunrise Bakery",
+  title: "Menu — After Sunrise Café",
   description:
     "Browse our full menu of breads, cakes, pastries, cookies, and drinks. Baked fresh daily in Lagos.",
 };
@@ -16,11 +16,10 @@ export default function MenuPage() {
             Our Menu
           </span>
           <h1 className="font-display text-4xl sm:text-5xl font-bold text-ink mt-2">
-            Everything we bake
+            Everything we make
           </h1>
           <p className="mt-4 text-ink-muted">
-            Filter by category to find your favourite. All items are baked fresh
-            daily — call or WhatsApp us to place an order.
+            Tap any item to see details, or add it straight to your order.
           </p>
         </FadeUp>
 
