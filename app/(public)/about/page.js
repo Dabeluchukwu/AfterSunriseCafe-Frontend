@@ -18,7 +18,7 @@ export default function AboutPage() {
             About Us
           </span>
           <h1 className="font-display text-4xl sm:text-5xl font-bold text-ink mt-2">
-            Baked with heart, since 2015
+            Baked with heart, since 2024
           </h1>
         </FadeUp>
 

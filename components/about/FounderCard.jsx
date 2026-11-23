@@ -17,15 +17,14 @@ export default function FounderCard() {
         </div>
         <FaQuoteLeft className="text-accent mx-auto mb-4" size={22} />
         <p className="text-ink-soft italic max-w-xl mx-auto">
-          "I believe food is love made visible. Every loaf, every cake, every
-          pastry that leaves our kitchen carries a piece of that belief — and a
-          piece of our family's heart."
+          "To love is to be intentional, and intentionality takes time. Every product deserves thought, care, and purpose. That’s why every creation is thoughtfully curated to connect with our customers’ emotions and make their moments more special. 
+          At After Sunrise, love is in the details."
         </p>
         <div className="mt-5">
           <div className="font-display font-semibold text-lg text-ink">
             The Founder
           </div>
-          <div className="text-sm text-ink-muted">After Sunrise Bakery</div>
+          <div className="text-sm text-ink-muted">After Sunrise Café </div>
         </div>
       </div>
     </FadeUp>
